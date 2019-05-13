@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	
+	cout << "counting: ";
+	a = 1;
+	
+	for (a=1;a<=10;a++)
+	{
+		cout << a << ", ";
+		if (a==10) break;
+	}
+	for (a=12;a<=30;a+=2)
+	{
+		cout << a << ", ";
+	}
+	return 0;
+}

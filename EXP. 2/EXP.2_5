@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b,c,d,e;
+	
+
+	
+	cout << "Fibonacci: ";
+    b = 22;
+    c = 1;
+    d = 0; 
+	
+	
+	for (a=0;a<b;a++)
+	{
+	    if (a<=1)
+	    e=a;
+	    
+	    else 
+	    {
+	        e = c + d;
+	        d = c;
+	        c = e;
+	    }
+	    cout << e << ", ";
+	    }  
+	return 0;
+}

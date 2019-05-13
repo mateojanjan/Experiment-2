@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y,z; 
+
+    
+ 
+
+    
+    
+    cout<<"Enter the meter readings in gallons this month:  "; cin >> x; 
+    cout<<"Enter the meter readings in gallons for the previous month:  "; cin >> y; 
+    cout<<"Enter unpaid balance: $  "; cin >> z; 
+
+    if (z > 0)
+     cout << "Your water bill is: $ " << 35 + (z*1.10) + (y*1.10) + 20 + z; 
+    else
+    cout << "Your water bill is: $ " << 35 + (x*1.10) + (y*1.10);
+    
+ 
+    return 0;
+}

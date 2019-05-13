@@ -1,0 +1,48 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+
+using namespace std;
+
+int
+main ()
+{
+
+
+  double b, c;
+  int a;
+
+
+
+
+  c = 2.5;
+
+  cout << "enter the number a:  ";
+  cin >> a;
+  cout << "enter the number b:  ";
+  cin >> b;
+
+  switch (a)
+    {
+    case 1:
+      if (1 < b < 5)
+	cout << fixed << showpoint << setprecision (2) <<
+	  "V is: " << a * b * c;
+      else if (b >= 5)
+	cout << fixed << showpoint << setprecision (2) <<
+	  "V is: " << a + b / c;
+      break;
+    case 2:
+      if (b <= 5)
+	cout << fixed << showpoint << setprecision (2) <<
+	  "V is: " << abs ((a - b) / c);
+      else if (b > 5)
+	cout << fixed << showpoint << setprecision (2) <<
+	  "V is: " << a - sqrt (b + c);
+      break;
+    default:
+      cout << fixed << showpoint << setprecision (2) << "V is: "
+	<< a + b + c;
+    }
+    return 0;
+}

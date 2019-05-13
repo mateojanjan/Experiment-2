@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int y; 
+    char x;
+    
+ 
+
+    
+    
+    cout<<"Please enter the package you want: "; cin >> x; 
+    cout<<"Please enter the number of hours you spent: "; cin >> y; 
+    
+    switch (x)
+    {
+        case 'A':
+            if (y > 10)
+            cout << "Your monthly bill is: $" << 995*(y-10)*20;
+            else if (y <= 10)
+           cout << "Your monthly bill is: $" << 995;
+            else 
+             cout << "Invalid";
+        break; 
+        
+        case 'B':
+        if (y > 20)
+            cout << "Your monthly bill is: $" << 1495*(y-20)*10;
+            else if (y <= 20)
+           cout << "Your monthly bill is: $" << 1495;
+            else 
+             cout << "Invalid";
+        break; 
+        
+        case 'C':
+        cout << "Your monthly bill is: $1995";
+        break; 
+        
+        default:
+        cout << "Invalid";
+    }
+    
+ 
+    return 0;
+}
